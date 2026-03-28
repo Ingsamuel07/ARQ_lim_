@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Perfil 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\user\\Documents\\ARQ_lim\\ARQ_lim\\src\\WebApi\\WebApi.csproj",
+      "nativeDebugging": false
+    }
+  }
+}
