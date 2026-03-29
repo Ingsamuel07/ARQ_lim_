@@ -9,6 +9,7 @@ using Domain.Services;
 public class CreateOrderUseCase
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static Order Execute(string customer, string product, int qty, decimal price)
     {
     
@@ -20,6 +21,8 @@ public class CreateOrderUseCase
     }
 }
 =======
+=======
+>>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
     public Order Execute(string customer, string product, int qty, decimal price)
     {
      // Logger.Log("CreateOrderUseCase starting");
@@ -33,4 +36,7 @@ public class CreateOrderUseCase
        return order;
     }
 }
+<<<<<<< HEAD
+>>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
+=======
 >>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2

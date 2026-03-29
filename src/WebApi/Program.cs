@@ -19,8 +19,13 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 BadDb.ConnectionString =
    app.Configuration.GetConnectionString("bad");
+=======
+BadDb.ConnectionString = app.Configuration["ConnectionStrings:Sql"]
+ ?? "Server=localhost;Database=master;User Id=sa;Password=SuperSecret123!;TrustServerCertificate=True";
+>>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
 =======
 BadDb.ConnectionString = app.Configuration["ConnectionStrings:Sql"]
  ?? "Server=localhost;Database=master;User Id=sa;Password=SuperSecret123!;TrustServerCertificate=True";
@@ -66,7 +71,11 @@ app.MapGet("/info", (IConfiguration cfg) => new
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 await app.RunAsync();  
+=======
+app.Run();  
+>>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
 =======
 app.Run();  
 >>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
