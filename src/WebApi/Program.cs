@@ -18,8 +18,13 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+<<<<<<< HEAD
 BadDb.ConnectionString =
    app.Configuration.GetConnectionString("bad");
+=======
+BadDb.ConnectionString = app.Configuration["ConnectionStrings:Sql"]
+ ?? "Server=localhost;Database=master;User Id=sa;Password=SuperSecret123!;TrustServerCertificate=True";
+>>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
 
 app.UseCors("bad");
 
@@ -60,4 +65,8 @@ app.MapGet("/info", (IConfiguration cfg) => new
     version = "v0.0.1-unsecure"
 });
 
+<<<<<<< HEAD
 await app.RunAsync();  
+=======
+app.Run();  
+>>>>>>> 9e31d8277ab97642fc6c5b62b022723f1dd60cd2
